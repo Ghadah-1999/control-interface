@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Display</title>
+  <style>
+    body {
+      background-color: #F5F5F5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #48D1CC;
+    }
+    
+    p {
+      color: #4682B4;
+    }
+  </style>
+  <script src="data.js"></script>
+</head>
+<body>
+  <h1>Data Display</h1>
+  <p>Robot status: <span id="status">Idle</span></p>
+  <p>Battery level: <span id="battery">100%</span></p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Page</title>
+</head>
+<body>
+    <script>
+        // استدعاء قيمة الزر المخزنة في الجلسة
+        var buttonValue = sessionStorage.getItem('buttonValue');
+        
+        // عرض قيمة الزر
+        document.write("Button Value: " + buttonValue);
+    </script>
+</body>
+</html>
